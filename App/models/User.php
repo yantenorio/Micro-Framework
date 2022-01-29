@@ -9,20 +9,24 @@ class User extends Model
 
     public function postUser()
     {
+        $email = $_POST['email'];
+        $name = $_POST['name'];
+        $string_password = $_POST['password'];
+
+        $password = password_hash($string_password, PASSWORD_BCRYPT);
+
         $query = "insert into users(name, email, password) values (:name, :email, :password)";
 
         $stmt = $this->pdo->prepare($query);
 
-        $stmt->bindParam(':email', $_POST['email'], PDO::PARAM_STR);
-        $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
-        $stmt->bindParam(':password', $_POST['password'], PDO::PARAM_STR);
+        $stmt->bindValue(':name', $name);
+        $stmt->bindValue(':email', $email);
+        $stmt->bindValue(':password', $password);
 
-        if($stmt->execute()) {
+        if ($stmt->execute()) {
             return true;
         } else {
-            echo 'deu merda'; 
+            echo 'deu merda';
         }
-
-        
     }
 }
