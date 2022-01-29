@@ -1,36 +1,28 @@
 <?php
+
 namespace App\Models;
 
-class User
+use PDO;
+
+class User extends Model
 {
-    private $id;
-    private $name;
-    private $email;
-    private $password;
 
-
-    public function __get($attr)
-    {
-        return $this->$attr;
-    }
-
-    public function __set($attr, $value)
-    {
-        $this->$attr = $value;
-    }
-
-    public function createUser()
+    public function postUser()
     {
         $query = "insert into users(name, email, password) values (:name, :email, :password)";
 
-        $stmt = $this->db->prepare($query);
+        $stmt = $this->pdo->prepare($query);
 
-        $stmt->bindValue(':name', $this->__get('name'));
-        $stmt->bindValue(':email', $this->__get('email'));
-        $stmt->bindValue(':password', $this->__get('password'));
+        $stmt->bindParam(':email', $_POST['email'], PDO::PARAM_STR);
+        $stmt->bindParam(':name', $_POST['name'], PDO::PARAM_STR);
+        $stmt->bindParam(':password', $_POST['password'], PDO::PARAM_STR);
 
-        $stmt->execute();
+        if($stmt->execute()) {
+            return true;
+        } else {
+            echo 'deu merda'; 
+        }
 
-        return $this;
+        
     }
 }

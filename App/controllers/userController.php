@@ -11,7 +11,7 @@ class userController
 
     public function index()
     {
-        require_once '../App/views/index.html';
+        require_once '../App/views/index.php';
     }
 
     public function register()
@@ -21,15 +21,10 @@ class userController
 
     public function postUser() 
     {
-        print_r($_POST);
 
-        $conn = Connection::getDB();
+        $user = new User();
 
-        $user = new User($conn);
-
-        $user->__set('name', $_POST['name']);
-        $user->__set('email', $_POST['email']);
-        $user->__set('password', $_POST['password']);
+        $user->postUser($_POST);
 
         print_r($user);
     }

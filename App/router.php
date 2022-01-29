@@ -32,13 +32,13 @@ class Router
             'action' => 'index'
         ];
 
-        $router['home'] = [
+        $router['register'] = [
             'route' => '/register',
             'controller' => 'userController',
             'action' => 'register'
         ];
 
-        $router['register'] = [
+        $router['create'] = [
             'route' => '/create',
             'controller' => 'userController',
             'action' => 'postUser'

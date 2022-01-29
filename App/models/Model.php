@@ -1,15 +1,14 @@
 <?php
 namespace App\Models;
-
-use PDO;
-
-class Model 
+abstract class Model
 {
-    protected $db;
-
-    public function __construct(PDO $db)
+    public function __construct()
     {
-        $this->db = $db;
+        $this->pdo = new \PDO(
+            'mysql:host=localhost;dbname=register',
+            'root',
+            'root'
+        );
     }
 
 }
