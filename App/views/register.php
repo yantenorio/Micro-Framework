@@ -13,10 +13,10 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-4">
-                <form class="form-signin" action="register.php" METHOD="post">
+                <form class="form-signin" action="/create" METHOD="post">
                     <h1 class="h3 mb-3 font-weight-normal">Register</h1>
                     <label for="inputEmail" class="sr-only">User Name</label>
-                    <input type="text" id="inputEmail" class="form-control" placeholder="User" required="" name="user_name" autofocus="">
+                    <input type="text" id="inputEmail" class="form-control" placeholder="User" required="" name="name" autofocus="">
                     <label for="inputEmail" class="sr-only">Email address</label>
                     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" name="email" autofocus="">
                     <label for="inputPassword" class="sr-only">Password</label>

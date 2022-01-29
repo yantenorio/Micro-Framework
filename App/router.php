@@ -39,7 +39,7 @@ class Router
         ];
 
         $router['register'] = [
-            'route' => '/postUser',
+            'route' => '/create',
             'controller' => 'userController',
             'action' => 'postUser'
         ];

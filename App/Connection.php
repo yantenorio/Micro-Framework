@@ -6,7 +6,7 @@ use PDOException;
 
 class Connection 
 {
-    public function getDB() 
+    public static function getDB() 
     {
         try {
 
