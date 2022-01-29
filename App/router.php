@@ -32,8 +32,14 @@ class Router
             'action' => 'index'
         ];
 
-        $router['register'] = [
+        $router['home'] = [
             'route' => '/register',
+            'controller' => 'userController',
+            'action' => 'register'
+        ];
+
+        $router['register'] = [
+            'route' => '/postUser',
             'controller' => 'userController',
             'action' => 'postUser'
         ];
