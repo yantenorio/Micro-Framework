@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use PDO;
+use phpDocumentor\Reflection\Types\Boolean;
 
 class User extends Model
 {
@@ -28,5 +29,32 @@ class User extends Model
         } else {
             echo 'deu merda';
         }
+    }
+
+    public function AuthenticateUser()
+    {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $query = $this->pdo->prepare("SELECT * FROM users WHERE email = :email");
+        $query->bindValue(':email', $email);
+        $query->execute();
+
+        if (!$query->rowCount()) {
+            echo "essa conta não existe";
+            return false;
+        }
+
+        $data = $query->fetch(PDO::FETCH_ASSOC);
+
+        if (password_verify($password, $data['password'])) {
+            echo 'user logged';
+        } else {
+            echo 'password or username wrong';
+        }
+
+        echo '<br>';
+        echo "Senha enviada: " . $password . "<br>";
+        echo "Senha do banco: " . $data['password'];
     }
 }

@@ -44,6 +44,13 @@ class Router
             'action' => 'postUser'
         ];
 
+        $router['login'] = [
+            'route' => '/auth',
+            'controller' => 'userController',
+            'action' => 'AuthUser'
+        ];
+
+
         $this->setRoutes($router);
     }
 

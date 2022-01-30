@@ -26,7 +26,17 @@ class userController
 
         $user->postUser($_POST);
 
-        print_r($user);
+        echo 'created';
+    }
+
+    public function AuthUser() 
+    {
+
+        $user = new User();
+
+        $user->AuthenticateUser();
+
+
     }
 
 
