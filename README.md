@@ -12,4 +12,7 @@
  </ul>
 
 <h2>How to use</h2>
+```bash
+composer install
+```
 
