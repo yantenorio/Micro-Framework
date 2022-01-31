@@ -13,9 +13,19 @@
 
 <h2>How to use</h2>
 
+<h3>Install the dependencies</h3>
+
  ```bash 
  
 composer install
+
+```
+
+<h3>Start the server</h3>
+
+```bash
+
+php -S localhost:8000
 
 ```
 
