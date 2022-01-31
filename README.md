@@ -5,9 +5,11 @@
 
 <p>The following technologies were used to build this project.</p>
 
-<a href="https://www.php.net/">[PHP]</a>
-- [Composer](https://getcomposer.org/)
-- [Bootstrap](https://getbootstrap.com/)
+<ul>
+ <li><a href="https://www.php.net/">PHP</a></li>
+ <li><a href="https://getcomposer.org/">Composer</a></li>
+ <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+ </ul>
 
 <h2>How to use</h2>
 
