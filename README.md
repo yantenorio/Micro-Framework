@@ -1,5 +1,5 @@
 <h1> Micro-Framework</h1>
-<p> A simple MVC framework for study</p>
+<p> A simple MVC framework for study using PHP</p>
 
  <h2>🛠 Technologies</h2>
 
