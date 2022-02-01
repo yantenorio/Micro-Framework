@@ -8,11 +8,11 @@ use phpDocumentor\Reflection\Types\Boolean;
 class User extends Model
 {
 
-    public function postUser()
+    public function postUser(array $payload)
     {
-        $email = $_POST['email'];
-        $name = $_POST['name'];
-        $string_password = $_POST['password'];
+        $email = $payload['email'];
+        $name = $payload['name'];
+        $string_password = $payload['password'];
 
         $password = password_hash($string_password, PASSWORD_BCRYPT);
 
@@ -31,10 +31,10 @@ class User extends Model
         }
     }
 
-    public function AuthenticateUser()
+    public function AuthenticateUser(array $payload)
     {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
+        $email = $payload['email'];
+        $password = $payload['password'];
 
         $query = $this->pdo->prepare("SELECT * FROM users WHERE email = :email");
         $query->bindValue(':email', $email);
