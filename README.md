@@ -1,5 +1,5 @@
-<h1> users-control </h1>
-<p> Simple login system in php </p>
+<h1> Micro-Framework</h1>
+<p> A simple MVC framework for study</p>
 
  <h2>🛠 Technologies</h2>
 
