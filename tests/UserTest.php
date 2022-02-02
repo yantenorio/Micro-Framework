@@ -19,4 +19,5 @@ class UserTest extends TestCase
 
         $this->assertTrue($result);
     }
+
 }

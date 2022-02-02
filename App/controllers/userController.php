@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Connection;
+
 use App\Models\User;
-use PDO;
+
 
 class userController
 {
@@ -34,7 +34,7 @@ class userController
 
         $user = new User();
 
-        $user->AuthenticateUser();
+        $user->authenticateUser($_POST);
 
 
     }

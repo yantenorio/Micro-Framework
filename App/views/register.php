@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-4">
-                <form class="form-signin" action="/create" METHOD="post">
+                <form class="form-signin" action="/create" method="post">
                     <h1 class="h3 mb-3 font-weight-normal">Register</h1>
                     <label for="inputEmail" class="sr-only">User Name</label>
                     <input type="text" id="inputEmail" class="form-control" placeholder="User" required="" name="name" autofocus="">

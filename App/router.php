@@ -2,8 +2,6 @@
 
 namespace App;
 
-use PhpParser\Node\Stmt\Foreach_;
-
 class Router 
 {
     private $router;

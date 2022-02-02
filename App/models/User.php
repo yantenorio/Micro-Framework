@@ -3,13 +3,13 @@
 namespace App\Models;
 
 use PDO;
-use phpDocumentor\Reflection\Types\Boolean;
 
 class User extends Model
 {
 
     public function postUser(array $payload)
     {
+        
         $email = $payload['email'];
         $name = $payload['name'];
         $string_password = $payload['password'];
@@ -31,7 +31,7 @@ class User extends Model
         }
     }
 
-    public function AuthenticateUser(array $payload)
+    public function authenticateUser(array $payload)
     {
         $email = $payload['email'];
         $password = $payload['password'];
