@@ -9,7 +9,7 @@ abstract class Model
         $this->pdo = new \PDO(
             'mysql:host=localhost;dbname=register',
             'root',
-            'root'
+            ''
         );
     }
 
