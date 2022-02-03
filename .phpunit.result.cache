@@ -1,1 +1,0 @@
-{"version":1,"defects":{"UserTest::testUserShouldLogIn":3},"times":{"UserTest::testUserShouldCreateAccount":0.1,"UserTest::testUserShouldLogIn":0.067}}
