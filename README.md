@@ -1,4 +1,4 @@
-# Micro-Framework
+# :office: Micro-Framework
 A simple MVC framework for study using PHP.
  
 ## Project
@@ -55,7 +55,7 @@ php -S localhost:8000/register.php
 
 ```
 
-### Router
+### :airplane: Router
 The router.php file is where the routes are
 
 Inside of initRoutes function you can create new routes if you need.
@@ -71,7 +71,7 @@ Inside of initRoutes function you can create new routes if you need.
 ```
 
 
-### Author:
+### :email: Author:
 ```
 yantenorio64@gmail.com
 ```
