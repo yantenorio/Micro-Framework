@@ -68,5 +68,9 @@ Inside of initRoutes function you can create new routes if you need.
 
 ```
 
+### Author:
+```
+yantenorio64@gmail.com
+```
 
 
