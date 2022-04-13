@@ -75,4 +75,4 @@ Inside of initRoutes function you can create new routes if you need.
 ```
 yantenorio64@gmail.com
 ```
-<script src="https://gist.github.com/rxaviers/7360908.js"></script>
+
