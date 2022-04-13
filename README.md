@@ -2,7 +2,9 @@
 A simple MVC framework for study using PHP.
  
 ## Project
-### 🛠 Technologies :white_check_mark:
+* Status: Done :white_check_mark:
+
+### 🛠 Technologies
 The following technologies were used to build this project.
 
 <ul>
@@ -68,9 +70,9 @@ Inside of initRoutes function you can create new routes if you need.
 
 ```
 
+
 ### Author:
 ```
 yantenorio64@gmail.com
 ```
 <script src="https://gist.github.com/rxaviers/7360908.js"></script>
-
